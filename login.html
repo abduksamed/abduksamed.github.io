@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <title>Giriş Yap</title>
+</head>
+
+<body>
+  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+            <div class="container">
+              <a class="navbar-brand text-danger " href="./index.html">Ad Soyad</a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./index.html">Hakkımda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./ozgecmis.html">Özgeçmiş</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./ilgialanlarim.html">İlgi Alanlarım</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./sehirim.html">Şehirim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./mirasimiz.html">Mirasımız</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./iletisim.html">iletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section class="home py-5" id="home">
+        <div class="container-lg py-2">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-md-0">
+                    <div class="home-img text-center">
+                        <img class=" mw-100" src="./img/login/login.svg" alt="profile img" >
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+                    <form  action="user.php" method="POST" onsubmit="return validateLogin()">
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required="required">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="pass" name="password" class="form-control"  required="required">
+                      </div>
+                      <div class="mb-3">
+
+                    </div>
+                    
+                    <button type="submit" name="login" onclick="validateLogin()"class="btn btn-primary">Giriş</button>
+                    <p id="result" class="alert alert-danger mt-3" style="display: none;"> </p>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
+
+

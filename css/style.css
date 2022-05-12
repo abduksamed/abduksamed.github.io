@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+/* Navbar */
+
+#nav-baslik{
+  color: #dc3545 !important;
+}
+
+.nav-item>a{
+  font-size: 1rem;
+}
+
+/* İndex Sayfası */
+
+.home-text>p{
+  color: #6c757d !important
+}
+.home-text>h1{
+  color: #dc3545 !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
+  font-weight: 700 !important;
+}
+.home-text>h2{
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.seciton-title>h1{
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.hakkimda-text{
+  color: #fff !important;
+}
+
+#index-card-img{
+  width: 100%;
+  height: 14rem;
+}
+
+/* Mirasımız Sayfası */
+
+.carousel-item {
+  height: 55rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 55rem;
+}
+
+.sakarya>div{
+  padding: 1rem;
+}
+
+.sakarya-img{
+  height: 20rem;
+  width: 90%;
+  margin: auto;
+}
+
+.sakarya-text{
+  align-self: center;
+}
+
+.sakarya-text > p{
+  font-size: 1.2rem;
+}
+
+.sakarya-text > h3{
+  color:#233e8b;
+}
+#sakarya-baslik{
+align-items: center;
+}
+#sakarya-baslik>h1{
+  color: red;
+}
+#sakarya-card-img{
+  height: 14rem;
+  width: 100%;
+}
+
+/* İlgi Alanlarım Sayfası */
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.result {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 400px;
+	width: 300px;
+}
+
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+  padding: 0.25rem;
+  background-color:red;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#cat_btn{
+  padding: 10px;
+	margin: 10px;
+	width: 300px;
+}
+#dog_btn{
+  padding: 10px;
+	margin: 10px;
+	width: 300px;
+}
+
